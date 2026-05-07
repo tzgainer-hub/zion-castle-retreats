@@ -1,0 +1,16 @@
+{
+  "name": "zion-castle-retreats",
+  "version": "1.0.0",
+  "description": "The Bella Vista Reset — Executive Wellness Retreats at Zion Castle",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "private": true
+}

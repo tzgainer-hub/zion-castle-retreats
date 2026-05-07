@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Bella Vista Reset — Executive Wellness Retreats in Zion</title>
+<meta name="description" content="A 4-day executive wellness retreat for the highest-performing leaders in America. Held in a private stone castle above Zion National Park. Six retreats a year, by inquiry only." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ivory: #f5f1ea;
+    --ivory-soft: #ebe4d6;
+    --beige: #e0d4c0;
+    --slate: #1a1612;
+    --slate-soft: #3a332a;
+    --terracotta: #a8512a;
+    --terracotta-deep: #7a3a1f;
+    --sage: #6b7560;
+    --gold: #c9a447;
+    --line: #d6cab6;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--ivory);
+    color: var(--slate);
+    line-height: 1.65;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    line-height: 1.15;
+    color: var(--slate);
+    letter-spacing: -0.01em;
+  }
+  h1 { font-size: clamp(2.8rem, 6vw, 5.2rem); }
+  h2 { font-size: clamp(2.2rem, 4.5vw, 3.6rem); }
+  h3 { font-size: clamp(1.4rem, 2.5vw, 1.9rem); }
+  p { font-size: 1.05rem; color: var(--slate-soft); }
+  a { color: inherit; text-decoration: none; }
+
+  .eyebrow {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--terracotta);
+    margin-bottom: 1.25rem;
+    display: block;
+  }
+
+  .container { max-width: 1240px; margin: 0 auto; padding: 0 2rem; }
+  .container-narrow { max-width: 880px; margin: 0 auto; padding: 0 2rem; }
+
+  /* Nav */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    padding: 1.25rem 2rem;
+    background: rgba(245, 241, 234, 0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line);
+  }
+  nav .nav-inner {
+    max-width: 1240px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  nav .brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem; letter-spacing: 0.02em;
+    color: var(--slate);
+  }
+  nav .brand span { color: var(--terracotta); }
+  nav .nav-links { display: flex; gap: 2.25rem; align-items: center; }
+  nav .nav-links a {
+    font-size: 0.85rem; letter-spacing: 0.05em;
+    color: var(--slate-soft); transition: color 0.2s;
+  }
+  nav .nav-links a:hover { color: var(--terracotta); }
+  nav .cta-btn {
+    background: var(--slate); color: var(--ivory);
+    padding: 0.7rem 1.4rem; border-radius: 2px;
+    font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;
+    transition: background 0.2s;
+  }
+  nav .cta-btn:hover { background: var(--terracotta); color: var(--ivory) !important; }
+  @media (max-width: 820px) {
+    nav .nav-links a:not(.cta-btn) { display: none; }
+  }
+
+  /* Hero */
+  .hero {
+    min-height: 100vh;
+    background:
+      linear-gradient(rgba(8, 6, 4, 0.45), rgba(8, 6, 4, 0.30)),
+      url('images/property.jpg') center/cover;
+    display: flex; align-items: center;
+    color: var(--ivory);
+    padding-top: 6rem;
+  }
+  .hero h1 { color: var(--ivory); font-weight: 300; max-width: 900px; }
+  .hero .eyebrow { color: var(--gold); }
+  .hero .lede {
+    font-size: 1.2rem; max-width: 620px;
+    color: rgba(245, 241, 234, 0.88);
+    margin: 1.75rem 0 2.5rem;
+    line-height: 1.6;
+  }
+  .hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .btn-primary, .btn-secondary {
+    padding: 1rem 2rem; font-size: 0.85rem;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    border-radius: 2px; transition: all 0.25s;
+    display: inline-block; cursor: pointer; border: none;
+  }
+  .btn-primary {
+    background: var(--terracotta); color: var(--ivory);
+  }
+  .btn-primary:hover { background: var(--terracotta-deep); transform: translateY(-1px); }
+  .btn-secondary {
+    background: transparent; color: var(--ivory);
+    border: 1px solid rgba(245, 241, 234, 0.5);
+  }
+  .btn-secondary:hover { border-color: var(--gold); color: var(--gold); }
+  .hero-meta {
+    margin-top: 5rem;
+    display: flex; gap: 3rem; flex-wrap: wrap;
+    border-top: 1px solid rgba(245, 241, 234, 0.2);
+    padding-top: 2rem;
+  }
+  .hero-meta div { font-size: 0.85rem; letter-spacing: 0.05em; opacity: 0.85; }
+  .hero-meta strong {
+    display: block; font-family: 'Cormorant Garamond', serif;
+    font-size: 1.7rem; color: var(--gold); margin-bottom: 0.2rem;
+    font-weight: 400;
+  }
+
+  /* Section base */
+  section { padding: 7rem 0; }
+  .section-light { background: var(--ivory); }
+  .section-soft { background: var(--ivory-soft); }
+  .section-dark { background: var(--slate); color: var(--ivory); }
+  .section-dark h1, .section-dark h2, .section-dark h3 { color: var(--ivory); }
+  .section-dark p { color: rgba(245, 241, 234, 0.75); }
+
+  /* Promise section */
+  .promise { text-align: center; }
+  .promise h2 { max-width: 780px; margin: 0 auto 2rem; }
+  .promise .lede {
+    font-size: 1.2rem; max-width: 680px; margin: 0 auto 4rem;
+    line-height: 1.7;
+  }
+  .outcomes {
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    gap: 0; margin-top: 3rem;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .outcome {
+    padding: 2.5rem 1.5rem; text-align: left;
+    border-right: 1px solid var(--line);
+  }
+  .outcome:last-child { border-right: none; }
+  .outcome .num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.8rem; color: var(--terracotta);
+    line-height: 1; margin-bottom: 1rem;
+    font-weight: 400;
+  }
+  .outcome h4 {
+    font-size: 1.25rem; margin-bottom: 0.6rem;
+  }
+  .outcome p { font-size: 0.92rem; line-height: 1.55; }
+  @media (max-width: 820px) {
+    .outcomes { grid-template-columns: repeat(2, 1fr); }
+    .outcome { border-right: none; border-bottom: 1px solid var(--line); }
+    .outcome:nth-child(odd) { border-right: 1px solid var(--line); }
+  }
+  @media (max-width: 520px) {
+    .outcomes { grid-template-columns: 1fr; }
+    .outcome { border-right: none !important; }
+  }
+
+  /* The Stack */
+  .stack-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 5rem;
+    align-items: center;
+  }
+  @media (max-width: 900px) { .stack-grid { grid-template-columns: 1fr; gap: 3rem; } }
+  .stack-grid img {
+    width: 100%; height: 600px; object-fit: cover;
+    border-radius: 2px;
+  }
+  .stack-grid h2 { margin-bottom: 1.5rem; }
+  .stack-list { margin-top: 2.5rem; }
+  .stack-item {
+    padding: 1.25rem 0;
+    border-top: 1px solid var(--line);
+    display: grid; grid-template-columns: 140px 1fr; gap: 2rem;
+    align-items: baseline;
+  }
+  .stack-item:last-child { border-bottom: 1px solid var(--line); }
+  .stack-item .label {
+    font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--terracotta); font-weight: 500;
+  }
+  .stack-item .body { font-size: 0.98rem; color: var(--slate-soft); }
+  .stack-item .body strong { color: var(--slate); font-weight: 500; }
+  @media (max-width: 600px) {
+    .stack-item { grid-template-columns: 1fr; gap: 0.4rem; }
+  }
+
+  /* Itinerary */
+  .itinerary-intro { text-align: center; margin-bottom: 5rem; }
+  .itinerary-intro h2 { margin-bottom: 1.5rem; }
+  .itinerary-intro p { max-width: 620px; margin: 0 auto; font-size: 1.1rem; }
+  .days {
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+  @media (max-width: 1000px) { .days { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 600px) { .days { grid-template-columns: 1fr; } }
+  .day {
+    background: var(--ivory);
+    padding: 2.5rem 2rem;
+    border: 1px solid var(--line);
+    border-radius: 2px;
+  }
+  .day .day-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.85rem; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--terracotta);
+    margin-bottom: 0.4rem; display: block;
+  }
+  .day h3 { margin-bottom: 1.5rem; font-size: 1.5rem; }
+  .day ul { list-style: none; }
+  .day ul li {
+    font-size: 0.92rem; padding: 0.6rem 0;
+    border-top: 1px solid var(--line);
+    color: var(--slate-soft);
+  }
+  .day ul li:first-child { border-top: none; padding-top: 0; }
+  .day ul li time {
+    display: inline-block; width: 65px;
+    font-weight: 500; color: var(--terracotta);
+    font-size: 0.78rem; letter-spacing: 0.05em;
+  }
+
+  /* Property */
+  .property-grid {
+    display: grid; grid-template-columns: 1.1fr 1fr; gap: 5rem;
+    align-items: center;
+  }
+  @media (max-width: 900px) { .property-grid { grid-template-columns: 1fr; gap: 3rem; } }
+  .property-grid img { width: 100%; height: 580px; object-fit: cover; border-radius: 2px; }
+  .property-stats {
+    display: grid; grid-template-columns: repeat(2, 1fr);
+    gap: 2rem; margin-top: 2.5rem;
+    padding-top: 2.5rem; border-top: 1px solid var(--line);
+  }
+  .property-stats div .num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem; color: var(--terracotta); line-height: 1;
+    font-weight: 400;
+  }
+  .property-stats div .label {
+    display: block; margin-top: 0.4rem;
+    font-size: 0.78rem; letter-spacing: 0.15em;
+    text-transform: uppercase; color: var(--slate-soft);
+  }
+
+  /* Arrival break */
+  .arrival-break {
+    min-height: 60vh;
+    background:
+      linear-gradient(rgba(8, 6, 4, 0.45), rgba(8, 6, 4, 0.55)),
+      url('images/gates.jpg') center/cover fixed;
+    display: flex; align-items: center; justify-content: center;
+    text-align: center; color: var(--ivory);
+    padding: 5rem 2rem;
+  }
+  .arrival-break .inner { max-width: 720px; }
+  .arrival-break h2 {
+    color: var(--ivory); font-weight: 300;
+    font-size: clamp(1.8rem, 3.4vw, 2.8rem);
+    line-height: 1.3;
+    font-style: italic;
+  }
+  .arrival-break .eyebrow { color: var(--gold); }
+  @media (max-width: 820px) {
+    .arrival-break { background-attachment: scroll; min-height: 45vh; }
+  }
+
+  /* Pricing / Tiers */
+  .tiers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 4rem; }
+  @media (max-width: 900px) { .tiers { grid-template-columns: 1fr; } }
+  .tier {
+    background: rgba(245, 241, 234, 0.05);
+    border: 1px solid rgba(245, 241, 234, 0.15);
+    padding: 3rem 2.5rem;
+    border-radius: 2px;
+    transition: border-color 0.3s;
+  }
+  .tier:hover { border-color: var(--gold); }
+  .tier.featured {
+    background: rgba(201, 164, 71, 0.08);
+    border-color: var(--gold);
+  }
+  .tier .tier-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem; margin-bottom: 0.5rem;
+  }
+  .tier .tier-meta {
+    font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 2rem; display: block;
+  }
+  .tier .tier-price {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem; line-height: 1; color: var(--ivory);
+    margin-bottom: 0.3rem; font-weight: 400;
+  }
+  .tier .tier-price-detail {
+    font-size: 0.85rem; color: rgba(245, 241, 234, 0.6);
+    margin-bottom: 2rem; display: block;
+  }
+  .tier ul { list-style: none; margin: 2rem 0; }
+  .tier ul li {
+    padding: 0.7rem 0;
+    font-size: 0.92rem; color: rgba(245, 241, 234, 0.82);
+    border-top: 1px solid rgba(245, 241, 234, 0.12);
+  }
+  .tier ul li:first-child { border-top: none; padding-top: 0; }
+
+  /* Testimonial */
+  .testimonial-section { padding: 9rem 0; }
+  .testimonial {
+    text-align: center; max-width: 880px; margin: 0 auto;
+  }
+  .testimonial blockquote {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    font-weight: 300; line-height: 1.4;
+    color: var(--slate); font-style: italic;
+    margin-bottom: 2.5rem;
+  }
+  .testimonial cite {
+    font-style: normal; font-size: 0.85rem;
+    letter-spacing: 0.15em; text-transform: uppercase;
+    color: var(--slate-soft);
+  }
+  .testimonial cite strong { color: var(--terracotta); display: block; margin-bottom: 0.3rem; }
+
+  /* Inquiry */
+  .inquiry-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 5rem;
+    align-items: start;
+  }
+  @media (max-width: 900px) { .inquiry-grid { grid-template-columns: 1fr; gap: 3rem; } }
+  .inquiry-form {
+    background: var(--ivory);
+    padding: 3rem;
+    border-radius: 2px;
+    border: 1px solid var(--line);
+  }
+  .form-group { margin-bottom: 1.5rem; }
+  .form-group label {
+    display: block; font-size: 0.75rem; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--slate-soft);
+    margin-bottom: 0.5rem; font-weight: 500;
+  }
+  .form-group input, .form-group select, .form-group textarea {
+    width: 100%; padding: 0.85rem 1rem;
+    border: 1px solid var(--line);
+    background: var(--ivory);
+    font-family: 'Inter', sans-serif; font-size: 0.95rem;
+    color: var(--slate);
+    border-radius: 2px;
+    transition: border 0.2s;
+  }
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    outline: none; border-color: var(--terracotta);
+  }
+  .form-group textarea { resize: vertical; min-height: 110px; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 600px) { .form-row { grid-template-columns: 1fr; } }
+  .inquiry-form button {
+    width: 100%; margin-top: 1rem;
+    padding: 1.1rem;
+    background: var(--slate); color: var(--ivory);
+    border: none; cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem; letter-spacing: 0.15em; text-transform: uppercase;
+    border-radius: 2px;
+    transition: background 0.2s;
+  }
+  .inquiry-form button:hover { background: var(--terracotta); }
+  .inquiry-info h2 { margin-bottom: 1.5rem; }
+  .inquiry-info p { font-size: 1.05rem; margin-bottom: 1.5rem; }
+  .contact-block {
+    margin-top: 2.5rem; padding-top: 2.5rem;
+    border-top: 1px solid var(--line);
+  }
+  .contact-block .label {
+    font-size: 0.72rem; letter-spacing: 0.15em;
+    text-transform: uppercase; color: var(--slate-soft);
+    margin-bottom: 0.4rem;
+  }
+  .contact-block .value {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem; color: var(--slate);
+    margin-bottom: 1.5rem;
+  }
+  .contact-block .value a:hover { color: var(--terracotta); }
+
+  /* Map */
+  .map-section { padding: 0; background: var(--slate); }
+  .map-grid {
+    display: grid; grid-template-columns: 1fr 1.5fr;
+    align-items: stretch;
+  }
+  @media (max-width: 900px) { .map-grid { grid-template-columns: 1fr; } }
+  .map-info {
+    padding: 5rem 4rem; color: var(--ivory);
+    display: flex; flex-direction: column; justify-content: center;
+  }
+  .map-info h2 { color: var(--ivory); margin-bottom: 1.5rem; }
+  .map-info p { color: rgba(245, 241, 234, 0.75); margin-bottom: 1.5rem; }
+  .map-info .address {
+    margin-top: 2rem; padding-top: 2rem;
+    border-top: 1px solid rgba(245, 241, 234, 0.2);
+  }
+  .map-info .address .label {
+    font-size: 0.72rem; letter-spacing: 0.15em;
+    text-transform: uppercase; color: var(--gold);
+    margin-bottom: 0.4rem;
+  }
+  .map-info .address .value {
+    font-family: 'Cormorant Garamond', serif; font-size: 1.5rem;
+  }
+  .map-embed { min-height: 520px; }
+  .map-embed iframe { width: 100%; height: 100%; border: none; display: block; }
+
+  /* Footer */
+  footer {
+    background: var(--slate); color: rgba(245, 241, 234, 0.7);
+    padding: 4rem 0 2rem;
+    border-top: 1px solid rgba(245, 241, 234, 0.1);
+  }
+  footer .footer-grid {
+    display: grid; grid-template-columns: 2fr 1fr 1fr;
+    gap: 3rem; margin-bottom: 3rem;
+  }
+  @media (max-width: 700px) { footer .footer-grid { grid-template-columns: 1fr; } }
+  footer .brand-block .brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem; color: var(--ivory); margin-bottom: 1rem;
+  }
+  footer .brand-block .brand span { color: var(--terracotta); }
+  footer h5 {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem; letter-spacing: 0.15em;
+    text-transform: uppercase; color: var(--gold);
+    margin-bottom: 1.25rem; font-weight: 500;
+  }
+  footer ul { list-style: none; }
+  footer ul li { margin-bottom: 0.6rem; font-size: 0.92rem; }
+  footer ul li a:hover { color: var(--gold); }
+  footer .footer-bottom {
+    padding-top: 2rem;
+    border-top: 1px solid rgba(245, 241, 234, 0.1);
+    font-size: 0.8rem; opacity: 0.6;
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem;
+  }
+
+  /* Sophia concierge */
+  .sophia-launcher {
+    position: fixed; bottom: 28px; right: 28px; z-index: 300;
+    display: flex; align-items: center; gap: 0.8rem;
+    background: var(--slate); color: var(--ivory);
+    padding: 0.85rem 1.4rem 0.85rem 0.85rem;
+    border-radius: 999px;
+    cursor: pointer;
+    box-shadow: 0 18px 40px rgba(20, 14, 8, 0.35);
+    transition: transform 0.25s, background 0.25s;
+    border: 1px solid rgba(201, 164, 71, 0.25);
+  }
+  .sophia-launcher:hover { transform: translateY(-2px); background: var(--terracotta-deep); }
+  .sophia-launcher .avatar {
+    width: 38px; height: 38px; border-radius: 50%;
+    background: linear-gradient(135deg, var(--gold), var(--terracotta));
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem; color: var(--slate); font-weight: 500;
+    position: relative;
+  }
+  .sophia-launcher .avatar::after {
+    content: ''; position: absolute; bottom: 1px; right: 1px;
+    width: 10px; height: 10px; background: #6fcf97;
+    border-radius: 50%; border: 2px solid var(--slate);
+  }
+  .sophia-launcher .text {
+    font-size: 0.85rem; letter-spacing: 0.04em;
+    line-height: 1.2;
+  }
+  .sophia-launcher .text small {
+    display: block; font-size: 0.68rem;
+    letter-spacing: 0.15em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 0.15rem;
+  }
+  .sophia-launcher.hidden { display: none; }
+
+  .sophia-panel {
+    position: fixed; bottom: 28px; right: 28px; z-index: 301;
+    width: 380px; max-width: calc(100vw - 32px);
+    height: 560px; max-height: calc(100vh - 60px);
+    background: var(--ivory);
+    border-radius: 14px;
+    box-shadow: 0 24px 60px rgba(20, 14, 8, 0.4);
+    border: 1px solid var(--line);
+    display: none; flex-direction: column;
+    overflow: hidden;
+  }
+  .sophia-panel.open { display: flex; }
+  .sophia-header {
+    background: var(--slate); color: var(--ivory);
+    padding: 1.1rem 1.3rem;
+    display: flex; align-items: center; gap: 0.85rem;
+    border-bottom: 1px solid rgba(201, 164, 71, 0.2);
+  }
+  .sophia-header .avatar {
+    width: 42px; height: 42px; border-radius: 50%;
+    background: linear-gradient(135deg, var(--gold), var(--terracotta));
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem; color: var(--slate); font-weight: 500;
+  }
+  .sophia-header .meta { flex: 1; }
+  .sophia-header .meta .name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.15rem; line-height: 1.1;
+  }
+  .sophia-header .meta .role {
+    font-size: 0.7rem; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--gold);
+    margin-top: 0.15rem;
+  }
+  .sophia-header .close {
+    background: none; border: none;
+    color: rgba(245, 241, 234, 0.6);
+    font-size: 1.4rem; cursor: pointer;
+    width: 28px; height: 28px; line-height: 1;
+    transition: color 0.2s;
+  }
+  .sophia-header .close:hover { color: var(--gold); }
+  .sophia-body {
+    flex: 1; overflow-y: auto;
+    padding: 1.3rem; background: var(--ivory);
+  }
+  .sophia-msg {
+    margin-bottom: 0.9rem;
+    max-width: 85%;
+    padding: 0.75rem 1rem;
+    border-radius: 14px;
+    font-size: 0.93rem; line-height: 1.5;
+    animation: fadeUp 0.3s ease;
+  }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .sophia-msg.bot {
+    background: var(--ivory-soft);
+    color: var(--slate);
+    border-bottom-left-radius: 4px;
+  }
+  .sophia-msg.user {
+    background: var(--slate);
+    color: var(--ivory);
+    margin-left: auto;
+    border-bottom-right-radius: 4px;
+  }
+  .sophia-chips {
+    display: flex; flex-wrap: wrap; gap: 0.5rem;
+    margin-bottom: 0.9rem;
+  }
+  .sophia-chip {
+    background: var(--ivory);
+    border: 1px solid var(--line);
+    padding: 0.55rem 1rem;
+    border-radius: 999px;
+    font-size: 0.85rem; cursor: pointer;
+    color: var(--slate); font-family: 'Inter', sans-serif;
+    transition: all 0.2s;
+  }
+  .sophia-chip:hover {
+    border-color: var(--terracotta);
+    background: var(--terracotta);
+    color: var(--ivory);
+  }
+  .sophia-input-row {
+    border-top: 1px solid var(--line);
+    padding: 0.9rem 1.1rem;
+    display: flex; gap: 0.6rem; align-items: center;
+    background: var(--ivory);
+  }
+  .sophia-input-row input {
+    flex: 1; padding: 0.7rem 0.9rem;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    font-family: 'Inter', sans-serif; font-size: 0.92rem;
+    background: var(--ivory);
+    color: var(--slate);
+  }
+  .sophia-input-row input:focus { outline: none; border-color: var(--terracotta); }
+  .sophia-input-row button {
+    background: var(--terracotta); color: var(--ivory);
+    border: none; cursor: pointer;
+    width: 40px; height: 40px; border-radius: 50%;
+    font-size: 1.1rem;
+    transition: background 0.2s;
+  }
+  .sophia-input-row button:hover { background: var(--terracotta-deep); }
+  .sophia-disclaimer {
+    text-align: center; font-size: 0.7rem;
+    color: var(--slate-soft); opacity: 0.65;
+    padding: 0.5rem 1rem 0.7rem;
+    background: var(--ivory);
+  }
+  @media (max-width: 480px) {
+    .sophia-panel { bottom: 0; right: 0; left: 0; width: 100%; height: 88vh; border-radius: 14px 14px 0 0; }
+    .sophia-launcher { bottom: 16px; right: 16px; padding: 0.7rem 1rem 0.7rem 0.7rem; }
+    .sophia-launcher .text small { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="brand">Bella Vista <span>Reset</span></a>
+    <div class="nav-links">
+      <a href="#promise">The Reset</a>
+      <a href="#stack">Programming</a>
+      <a href="#itinerary">Itinerary</a>
+      <a href="#property">The Property</a>
+      <a href="#pricing">Investment</a>
+      <a href="#inquiry" class="cta-btn">Inquire</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="container">
+    <span class="eyebrow">Executive Wellness Retreats · Zion, Utah</span>
+    <h1>Four days that change the next four quarters.</h1>
+    <p class="lede">A private wellness immersion for senior leaders. Held in a seven-bedroom stone castle on a private ridge above Zion National Park. Limited to six retreats a year.</p>
+    <div class="hero-ctas">
+      <a href="#inquiry" class="btn-primary">Reserve a Retreat</a>
+      <a href="#itinerary" class="btn-secondary">View the Program</a>
+    </div>
+    <div class="hero-meta">
+      <div><strong>4–6 Days</strong>Private immersion</div>
+      <div><strong>8–12 Leaders</strong>Per retreat, max</div>
+      <div><strong>6 / Year</strong>Booking Q3 2026</div>
+    </div>
+  </div>
+</header>
+
+<!-- PROMISE -->
+<section class="section-light promise" id="promise">
+  <div class="container-narrow">
+    <span class="eyebrow">The Reset</span>
+    <h2>Your highest performers are running on fumes. We give them their edge back.</h2>
+    <p class="lede">Most "wellness retreats" are spa weekends with a yoga teacher. The Bella Vista Reset is something else entirely — a measured, programmed, four-day intervention designed by clinicians and operators who understand executive performance. Your team arrives running hot. They leave with biomarkers, behaviors, and a 90-day protocol they can actually keep.</p>
+  </div>
+  <div class="container">
+    <div class="outcomes">
+      <div class="outcome">
+        <div class="num">01</div>
+        <h4>Measured Results</h4>
+        <p>Baseline labs on arrival. Closing labs at exit. HRV, sleep architecture, inflammation, stress hormones — quantified.</p>
+      </div>
+      <div class="outcome">
+        <div class="num">02</div>
+        <h4>Sleep Restored</h4>
+        <p>Most participants log a 30–45% improvement in deep sleep within 72 hours. Sustained for months after.</p>
+      </div>
+      <div class="outcome">
+        <div class="num">03</div>
+        <h4>A Group of Peers</h4>
+        <p>You don't reset alone. You sit at the fire with 8–12 other leaders carrying the same weight. That's the secret part.</p>
+      </div>
+      <div class="outcome">
+        <div class="num">04</div>
+        <h4>A Protocol Home</h4>
+        <p>You leave with a 90-day plan a coach calibrates monthly. The reset doesn't end when the retreat does.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE STACK -->
+<section class="section-soft" id="stack">
+  <div class="container">
+    <div class="stack-grid">
+      <div>
+        <span class="eyebrow">The Programming</span>
+        <h2>Every modality earned its place. Nothing decorative.</h2>
+        <p>The wellness industry has gotten loose with its claims. We've built the opposite. Every protocol on property is here because the evidence is real and the equipment is best-in-class. No incense. No "energy work." Just measured stressors and measured recovery, on a tight schedule, with practitioners who've worked with professional athletes and CEOs.</p>
+        <div class="stack-list">
+          <div class="stack-item">
+            <span class="label">Heat / Cold</span>
+            <span class="body"><strong>Sunlighten infrared sauna</strong> + 38°F cold plunge. The contrast is the point.</span>
+          </div>
+          <div class="stack-item">
+            <span class="label">Red Light</span>
+            <span class="body"><strong>Joovv full-body therapy</strong> — mitochondrial support, recovery, skin, sleep.</span>
+          </div>
+          <div class="stack-item">
+            <span class="label">Peptides</span>
+            <span class="body"><strong>Concierge MD on call.</strong> BPC-157, GHK-Cu, NAD+, GLP-1 protocols where indicated.</span>
+          </div>
+          <div class="stack-item">
+            <span class="label">Movement</span>
+            <span class="body"><strong>Sunrise yoga, mobility, hiking</strong> in the Zion canyons. Daily. Optional, but everyone goes.</span>
+          </div>
+          <div class="stack-item">
+            <span class="label">Nervous System</span>
+            <span class="body"><strong>Breathwork, meditation, HRV training.</strong> The skills you take home.</span>
+          </div>
+          <div class="stack-item">
+            <span class="label">Nutrition</span>
+            <span class="body"><strong>Private chef, nutrient-dense menus,</strong> built around your labs. Zero alcohol. You won't miss it.</span>
+          </div>
+          <div class="stack-item">
+            <span class="label">Coaching</span>
+            <span class="body"><strong>1:1 executive coaching</strong> daily. Group leadership session each evening.</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=85" alt="Sunrise yoga and meditation" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ITINERARY -->
+<section class="section-light" id="itinerary">
+  <div class="container">
+    <div class="itinerary-intro">
+      <span class="eyebrow">A Sample Four-Day Retreat</span>
+      <h2>The arc is the medicine.</h2>
+      <p>Each day moves you through a distinct phase: arrive, dismantle, rebuild, integrate. You don't decide what's next. We do. That's part of the rest.</p>
+    </div>
+    <div class="days">
+      <div class="day">
+        <span class="day-num">Day One</span>
+        <h3>Arrive · Baseline</h3>
+        <ul>
+          <li><time>3:00p</time>Private transfer from St. George (SGU)</li>
+          <li><time>4:30p</time>Welcome, room settle, labs draw</li>
+          <li><time>6:00p</time>Sunset on the deck, intention dinner</li>
+          <li><time>8:30p</time>Group circle: what brought you here</li>
+          <li><time>10:00p</time>Sleep protocol begins</li>
+        </ul>
+      </div>
+      <div class="day">
+        <span class="day-num">Day Two</span>
+        <h3>Dismantle</h3>
+        <ul>
+          <li><time>6:30a</time>Sunrise meditation on the rim</li>
+          <li><time>7:30a</time>Sauna + cold plunge protocol</li>
+          <li><time>9:00a</time>Chef breakfast, lab review 1:1</li>
+          <li><time>11:00a</time>Guided Zion canyon hike</li>
+          <li><time>3:00p</time>Red light + recovery</li>
+          <li><time>5:00p</time>Executive coaching block</li>
+          <li><time>7:00p</time>Group leadership session, dinner</li>
+        </ul>
+      </div>
+      <div class="day">
+        <span class="day-num">Day Three</span>
+        <h3>Rebuild</h3>
+        <ul>
+          <li><time>6:30a</time>Yoga + breathwork</li>
+          <li><time>8:00a</time>Peptide consult (where indicated)</li>
+          <li><time>10:00a</time>Free block: hike, read, sleep</li>
+          <li><time>1:00p</time>Lunch + nutrition workshop</li>
+          <li><time>3:00p</time>HRV training session</li>
+          <li><time>5:30p</time>Sauna, plunge, sunset</li>
+          <li><time>7:30p</time>Fireside discussion, chef dinner</li>
+        </ul>
+      </div>
+      <div class="day">
+        <span class="day-num">Day Four</span>
+        <h3>Integrate · Depart</h3>
+        <ul>
+          <li><time>6:30a</time>Final sunrise practice</li>
+          <li><time>8:00a</time>Closing labs, biomarker review</li>
+          <li><time>10:00a</time>90-day protocol build, 1:1</li>
+          <li><time>12:00p</time>Closing meal, group commitments</li>
+          <li><time>2:00p</time>Private transfer to SGU</li>
+          <li><time>—</time>Coaching continues monthly</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROPERTY -->
+<section class="section-soft" id="property">
+  <div class="container">
+    <div class="property-grid">
+      <div>
+        <img src="images/view.jpg" alt="Sunset over the canyons — the view from the property" />
+      </div>
+      <div>
+        <span class="eyebrow">The Property</span>
+        <h2>A stone castle. On a private ridge. Above Zion.</h2>
+        <p>Bella Vista is a seven-bedroom stone castle built into a private ridge in the pine country above Zion National Park — every room with its own bath, every window with a view that takes a moment to register. The great room, the chef's kitchen, the firepits, the recovery suite, the yoga deck on the rim. Yours alone for four days. No other guests. No staff in the house overnight. Just your group and the silence.</p>
+        <div class="property-stats">
+          <div>
+            <div class="num">7</div>
+            <span class="label">Bedrooms</span>
+          </div>
+          <div>
+            <div class="num">12</div>
+            <span class="label">Group Capacity</span>
+          </div>
+          <div>
+            <div class="num">15 min</div>
+            <span class="label">From Zion Gates</span>
+          </div>
+          <div>
+            <div class="num">100%</div>
+            <span class="label">Private to Your Group</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ARRIVAL BREAK -->
+<section class="arrival-break">
+  <div class="inner">
+    <span class="eyebrow">Arrival</span>
+    <h2>"The gate closes behind you. Reception ends. Whatever you carried in, you carried in for the last time."</h2>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="section-dark" id="pricing">
+  <div class="container">
+    <div style="text-align:center; margin-bottom: 3rem;">
+      <span class="eyebrow" style="color: var(--gold);">Investment</span>
+      <h2>Three ways to bring the reset to your team.</h2>
+      <p style="max-width: 620px; margin: 1.5rem auto 0; color: rgba(245, 241, 234, 0.75);">Every option includes the property, the programming, the labs, the practitioners, the chef, and 90 days of post-retreat coaching. Travel not included.</p>
+    </div>
+    <div class="tiers">
+      <div class="tier">
+        <span class="tier-meta">Open Enrollment</span>
+        <div class="tier-name">The Shared Retreat</div>
+        <div class="tier-price">$6,500</div>
+        <span class="tier-price-detail">per executive · 4 days</span>
+        <ul>
+          <li>Group of 8–12 peer executives</li>
+          <li>Full programming and labs included</li>
+          <li>Private bedroom and bath</li>
+          <li>90 days of monthly coaching post-retreat</li>
+          <li>Quarterly retreat dates published</li>
+        </ul>
+      </div>
+      <div class="tier featured">
+        <span class="tier-meta">Most Requested</span>
+        <div class="tier-name">Private Leadership</div>
+        <div class="tier-price">$58,000</div>
+        <span class="tier-price-detail">flat · your team only · 4 days</span>
+        <ul>
+          <li>Up to 10 of your senior leaders</li>
+          <li>Full property, fully private</li>
+          <li>Programming customized to your team</li>
+          <li>One leadership working session built in</li>
+          <li>Optional CEO 1:1 with founding coach</li>
+          <li>Choose your own dates</li>
+        </ul>
+      </div>
+      <div class="tier">
+        <span class="tier-meta">Founder Tier</span>
+        <div class="tier-name">The Founder Reset</div>
+        <div class="tier-price">$14,000</div>
+        <span class="tier-price-detail">per founder · 6 days</span>
+        <ul>
+          <li>Ultra-private, 4–6 founders maximum</li>
+          <li>Extended 6-day immersion</li>
+          <li>Daily 1:1 executive coaching</li>
+          <li>Concierge peptide and labs protocol</li>
+          <li>Private chef built around your bloodwork</li>
+          <li>Two retreats per year, by invitation</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="section-light testimonial-section">
+  <div class="container">
+    <div class="testimonial">
+      <span class="eyebrow">From a Founding Group</span>
+      <blockquote>"I sent my five most senior people. They came back as a different team. The sleep alone was worth the check — but what I actually got was a leadership group that finally trusts each other again."</blockquote>
+      <cite><strong>CEO, Series C SaaS Company</strong>340 Employees · Founding Group</cite>
+    </div>
+  </div>
+</section>
+
+<!-- INQUIRY -->
+<section class="section-soft" id="inquiry">
+  <div class="container">
+    <div class="inquiry-grid">
+      <div class="inquiry-info">
+        <span class="eyebrow">Reserve a Retreat</span>
+        <h2>Six retreats a year. We don't sell publicly.</h2>
+        <p>Every booking begins with a 30-minute call. We're trying to make sure the fit is right — for your team and for our other guests. If it is, you'll receive a hold contract within 48 hours.</p>
+        <p>A 25% deposit secures the dates. Balance due 60 days before arrival.</p>
+        <div class="contact-block">
+          <div class="label">Direct Line</div>
+          <div class="value"><a href="tel:+19282123224">(928) 212-3224</a></div>
+          <div class="label">Email</div>
+          <div class="value"><a href="mailto:reserve@bellavistareset.com">reserve@bellavistareset.com</a></div>
+        </div>
+      </div>
+      <div class="inquiry-form">
+        <form>
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" placeholder="Full name" />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Company</label>
+              <input type="text" placeholder="Organization" />
+            </div>
+            <div class="form-group">
+              <label>Title</label>
+              <input type="text" placeholder="Role" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" placeholder="you@company.com" />
+            </div>
+            <div class="form-group">
+              <label>Phone</label>
+              <input type="tel" placeholder="(555) 555-5555" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Which Tier Interests You?</label>
+            <select>
+              <option>The Shared Retreat — $6,500 / executive</option>
+              <option>Private Leadership — $58,000 flat</option>
+              <option>The Founder Reset — $14,000 / founder</option>
+              <option>Not sure yet — recommend</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>How Many Leaders?</label>
+            <select>
+              <option>Just me</option>
+              <option>2–4</option>
+              <option>5–8</option>
+              <option>9–12</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>What Are You Hoping the Reset Does?</label>
+            <textarea placeholder="A few sentences. The more specific, the better the fit call."></textarea>
+          </div>
+          <button type="submit">Request a Discovery Call</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAP -->
+<section class="map-section">
+  <div class="map-grid">
+    <div class="map-info">
+      <span class="eyebrow" style="color: var(--gold);">Location</span>
+      <h2>Fly into St. George. We handle the rest.</h2>
+      <p>Bella Vista sits on a ridgeline 15 minutes from the west gate of Zion National Park, 35 minutes from St. George Regional (SGU), and 2.5 hours from Las Vegas (LAS). Private transfers from either airport are included in every retreat.</p>
+      <div class="address">
+        <div class="label">The Property</div>
+        <div class="value">Bella Vista Reset<br/>Above Zion National Park, Utah</div>
+      </div>
+    </div>
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=Zion+National+Park+Utah&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="brand-block">
+        <div class="brand">Bella Vista <span>Reset</span></div>
+        <p style="max-width: 380px; font-size: 0.92rem; color: rgba(245, 241, 234, 0.6);">A private executive wellness retreat at the edge of Zion National Park. Six retreats a year. By inquiry only.</p>
+      </div>
+      <div>
+        <h5>The Program</h5>
+        <ul>
+          <li><a href="#promise">The Reset</a></li>
+          <li><a href="#stack">Programming</a></li>
+          <li><a href="#itinerary">Itinerary</a></li>
+          <li><a href="#pricing">Investment</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Reach Us</h5>
+        <ul>
+          <li><a href="tel:+19282123224">(928) 212-3224</a></li>
+          <li><a href="mailto:reserve@bellavistareset.com">reserve@bellavistareset.com</a></li>
+          <li>Above Zion National Park, Utah</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 Bella Vista Reset · Above Zion National Park, Utah</div>
+      <div>Reservations open · Q3 2026 retreats</div>
+    </div>
+  </div>
+</footer>
+
+<!-- SOPHIA · Retreat Concierge -->
+<div class="sophia-launcher" id="sophiaLauncher" onclick="openSophia()">
+  <div class="avatar">S</div>
+  <div class="text">
+    <small>Concierge</small>
+    Speak with Sophia
+  </div>
+</div>
+
+<div class="sophia-panel" id="sophiaPanel">
+  <div class="sophia-header">
+    <div class="avatar">S</div>
+    <div class="meta">
+      <div class="name">Sophia</div>
+      <div class="role">Reservations Concierge</div>
+    </div>
+    <button class="close" onclick="closeSophia()" aria-label="Close">×</button>
+  </div>
+  <div class="sophia-body" id="sophiaBody">
+    <!-- messages injected here -->
+  </div>
+  <div class="sophia-input-row">
+    <input type="text" id="sophiaInput" placeholder="Type your reply…" onkeydown="if(event.key==='Enter')sendSophiaText()" />
+    <button onclick="sendSophiaText()" aria-label="Send">→</button>
+  </div>
+  <div class="sophia-disclaimer">
+    Sophia is the Bella Vista Reset concierge. She can answer questions, hold dates, and book your discovery call.
+  </div>
+</div>
+
+<script>
+  const sophiaScript = [
+    {
+      bot: "Hello — I'm Sophia, the Bella Vista Reset concierge. Are you exploring the retreat for yourself, your team, or both?",
+      chips: ["For myself", "For my team", "Both"]
+    },
+    {
+      bot: "Wonderful. Are you looking at a specific window — this quarter, next quarter, or somewhere on the horizon?",
+      chips: ["Q3 2026", "Q4 2026", "2027", "Flexible"]
+    },
+    {
+      bot: "Got it. And how many leaders are you thinking — just yourself, a small group of 2–4, or a full group of 8 or more?",
+      chips: ["Just me", "2–4", "5–8", "9–12"]
+    },
+    {
+      bot: "Thank you. The fastest path from here is a 30-minute discovery call with Glen, our founder. He'll walk you through the programming, hold tentative dates, and answer anything I can't. Would you like me to send the booking link to your email?",
+      chips: ["Yes, send it", "I'll book directly", "Tell me more first"]
+    },
+    {
+      bot: "Perfect — please share your name and email and I'll have the booking link in your inbox within the minute. Glen typically replies personally within a few hours.",
+      chips: []
+    }
+  ];
+
+  let sophiaStep = 0;
+  let sophiaOpened = false;
+
+  function openSophia() {
+    document.getElementById('sophiaPanel').classList.add('open');
+    document.getElementById('sophiaLauncher').classList.add('hidden');
+    if (!sophiaOpened) {
+      sophiaOpened = true;
+      setTimeout(() => renderSophiaStep(0), 250);
+    }
+  }
+  function closeSophia() {
+    document.getElementById('sophiaPanel').classList.remove('open');
+    document.getElementById('sophiaLauncher').classList.remove('hidden');
+  }
+  function renderSophiaStep(i) {
+    const body = document.getElementById('sophiaBody');
+    const step = sophiaScript[i];
+    if (!step) return;
+
+    const msg = document.createElement('div');
+    msg.className = 'sophia-msg bot';
+    msg.textContent = step.bot;
+    body.appendChild(msg);
+
+    if (step.chips && step.chips.length) {
+      const chipRow = document.createElement('div');
+      chipRow.className = 'sophia-chips';
+      step.chips.forEach(label => {
+        const c = document.createElement('button');
+        c.className = 'sophia-chip';
+        c.textContent = label;
+        c.onclick = () => respondSophia(label);
+        chipRow.appendChild(c);
+      });
+      body.appendChild(chipRow);
+    }
+    body.scrollTop = body.scrollHeight;
+  }
+  function respondSophia(text) {
+    const body = document.getElementById('sophiaBody');
+    // remove previous chip row
+    const chipRows = body.querySelectorAll('.sophia-chips');
+    if (chipRows.length) chipRows[chipRows.length - 1].remove();
+
+    const msg = document.createElement('div');
+    msg.className = 'sophia-msg user';
+    msg.textContent = text;
+    body.appendChild(msg);
+    body.scrollTop = body.scrollHeight;
+
+    sophiaStep++;
+    setTimeout(() => {
+      if (sophiaStep < sophiaScript.length) {
+        renderSophiaStep(sophiaStep);
+      } else {
+        const closing = document.createElement('div');
+        closing.className = 'sophia-msg bot';
+        closing.innerHTML = "Beautifully done. You're on the list. While you wait, the <a href='#itinerary' style='color:var(--terracotta);text-decoration:underline;'>sample itinerary</a> and <a href='#pricing' style='color:var(--terracotta);text-decoration:underline;'>investment tiers</a> are worth a read.";
+        body.appendChild(closing);
+        body.scrollTop = body.scrollHeight;
+      }
+    }, 500);
+  }
+  function sendSophiaText() {
+    const input = document.getElementById('sophiaInput');
+    const val = input.value.trim();
+    if (!val) return;
+    input.value = '';
+    respondSophia(val);
+  }
+
+  // Subtle attention pulse after 8 seconds of idle
+  setTimeout(() => {
+    const launcher = document.getElementById('sophiaLauncher');
+    if (launcher && !sophiaOpened) {
+      launcher.style.animation = 'fadeUp 0.6s ease';
+    }
+  }, 8000);
+</script>
+
+</body>
+</html>
